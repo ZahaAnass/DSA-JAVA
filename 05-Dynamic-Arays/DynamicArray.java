@@ -54,15 +54,42 @@ public class DynamicArray {
     }
 
     public int search(Object data) {
-        return -1; // Placeholder for search logic
+
+        for(int i = 0; i < size; i++){
+            if(array[i] == data) {
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     private void grow() {
-        // Logic to grow the array when needed
+        
+        int newCapacity = (int) (capacity * 2); // Increase capacity by 50%
+        Object[] newArray = new Object[newCapacity];
+
+        for(int i = 0; i < size; i++) {
+            newArray[i] = array[i]; // Copy existing elements to the new array
+        }
+
+        capacity = newCapacity; // Update capacity
+        array = newArray; // Replace old array with new array
+
     }
 
     private void shrink() {
-        // Logic to shrink the array when needed
+        
+        int newCapacity = (int) (capacity/3); // Decrease capacity by 1/3
+        Object[] newArray = new Object[newCapacity];
+
+        for(int i = 0; i < size; i++) {
+            newArray[i] = array[i]; // Copy existing elements to the new array
+        }
+
+        capacity = newCapacity; // Update capacity
+        array = newArray; // Replace old array with new array
+
     }
 
     public boolean isEmpty() {
@@ -86,8 +113,5 @@ public class DynamicArray {
 
         return string;
     }
-
-    
-
 
 }
