@@ -4,7 +4,8 @@ public class Main {
     public static void main(String[] args){
 
         // Binary Search = Search algorithm that finds the position of a target
-        //                 value within a sorted array.
+        //                 value within a sorted array. requires the array to be
+        //                 sorted in ascending or descending order.
         //                 Half of the array is eliminated during each "step" .
         //                 runtime complexity = O(log n)
 
