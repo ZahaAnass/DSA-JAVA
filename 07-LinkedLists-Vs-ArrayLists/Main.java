@@ -1,3 +1,25 @@
+// ********************************************
+//
+// LinkedList vs ArrayList: Quick Reference
+//
+// 1. Structure:
+//    - ArrayList: Dynamic array (contiguous memory)
+//    - LinkedList: Chain of nodes with references
+//
+// 2. Performance:
+//    - ArrayList: Fast access O(1), slow insertions O(n)
+//    - LinkedList: Slow access O(n), fast end insertions O(1)
+//
+// 3. When to use:
+//    - ArrayList: For lots of random access, few modifications
+//    - LinkedList: For frequent insertions/deletions, sequential access
+//
+// 4. Memory:
+//    - ArrayList: Lower overhead per element
+//    - LinkedList: Higher overhead (extra pointers)
+//
+// ********************************************
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
