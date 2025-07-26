@@ -17,6 +17,14 @@ public class Main {
         // bucket = an indexed storage location for one or more Entries
         //          can store multiple Entries in case of a collision (linked similarly a LinkedList)
 
+        // collision = hash function generates the same index for more than one key 
+        //             less collision = more efficiency
+
+        // Runtime complexity = Best Case O(1)
+        //                      Average Case O(1)
+        //                      Worst Case O(n)
+
+
         Hashtable<Integer, String> IntegerTable = new Hashtable<>(10);
         Hashtable<String, String> StringTable = new Hashtable<>(10);
 
