@@ -2,12 +2,15 @@ public class Main {
 
     public static void main(String[] args) {
         
-        // Adjecency List = An array/arrayList of linkedlists.
-        //                  Each LinkedList has a unique node at head.
-        //                  All adjecent nodes are stored in the linkedlist.
+        // Defining First Srearch = a search algorithm for traverising
+        //                          a tree or graph data structures.
 
-        //                  runtime complexity to check an Edge = 0(v)
-        //                  space complexity = 0(v + e)
+        // 1. Pick a route
+        // 2. Keep going until you reach a dead end, 
+        //    or a previously visited node
+        // 3. Backtrack to the last node that has unvisited neighbours
+        // 4. Repeat until all nodes are visited
+
 
         Graph graph = new Graph(5);
 
