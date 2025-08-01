@@ -96,4 +96,4 @@ For further reading and practice:
 
 ## Contributing
 
-Feel free to submit issues and enhancement requests! Contributions are welcome. Please fork the repository and submit a pull request.
+Feel free to submit issues and enhancement requests! Contributions are welcome. Please fork the repository and submit a pull request. 
